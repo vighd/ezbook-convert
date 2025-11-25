@@ -39,28 +39,49 @@ NEW UNCATEGORIZED MERCHANTS:
 {{add $i $.BusinessStartIndex}}. "{{$merchant}}"
 {{- end}}
 
-TASK:
-1. Research each merchant if needed (use internet search)
-2. Assign appropriate categories based on merchant business type
-3. For [OWNER_NAME], [TRANSFER_PARTNER], and [ACCOUNT_NUMBER], use the suggested categories above
-4. Add keywords to existing categories or suggest new category if needed
-5. Return the COMPLETE updated YAML config
+IMPORTANT INSTRUCTIONS:
+1. RESEARCH each merchant carefully:
+   - Use internet search to identify the business type
+   - Look for keywords in the merchant name (e.g., "Pekseg" = bakery, "Patika" = pharmacy)
+   - Many names contain the business category directly (e.g., "ABC" = grocery, "Kft" = company)
+   - Hungarian business names often include type hints (pékség, patika, étterem, benzinkút, etc.)
 
-OUTPUT FORMAT REQUIREMENTS:
-- Your ENTIRE response must be valid YAML (no explanations before/after)
-- Start your response with: known_partners:
-- Put the YAML in a code block using triple backticks:
-  ` + "```yaml" + `
-  known_partners:
-    - .....
-  ` + "```" + `
-- This allows easy copy-paste or download
+2. CATEGORIZATION RULES:
+   - Assign appropriate categories based on merchant business type
+   - For [OWNER_NAME], [TRANSFER_PARTNER], and [ACCOUNT_NUMBER], use the suggested categories above
+   - Add keywords to existing categories that match the business type
+   - Only create new category if absolutely necessary (prefer existing ones)
 
-CONFIG REQUIREMENTS:
-- Include ALL existing categories from CURRENT CONFIG above
-- Add new merchants to known_partners list (use placeholders like [TRANSFER_PARTNER])
-- Add new keywords to appropriate categories
-- Each category MUST have a 'subcategory' field
+3. YAML FORMATTING - CRITICAL:
+   - Each keyword MUST be on a separate line with a dash (-)
+   - DO NOT use nested lists like ["item1", "item2"] 
+   - DO NOT use inline arrays
+   - Each category MUST have a 'subcategory' field
+   
+   CORRECT format:
+     keywords:
+       - keyword1
+       - keyword2
+       - keyword3
+   
+   WRONG format (DO NOT DO THIS):
+     keywords:
+       - ["keyword1", "keyword2"]
+
+4. OUTPUT FORMAT:
+   - Your ENTIRE response must be valid YAML (no explanations before/after)
+   - Start your response with: known_partners:
+   - Put the YAML in a code block using triple backticks:
+     ` + "```yaml" + `
+     known_partners:
+       - .....
+     ` + "```" + `
+   - This allows easy copy-paste or download
+
+5. COMPLETENESS:
+   - Include ALL existing categories from CURRENT CONFIG above
+   - Add new merchants to known_partners list (use placeholders like [TRANSFER_PARTNER])
+   - Add new keywords to appropriate categories (one per line!)
 
 AVAILABLE CATEGORY NAMES (from ezBookkeeping defaults):
 {{.AvailableCategories}}
@@ -74,8 +95,9 @@ Found {{.TotalMerchants}} new merchants ({{.AnonymizedCount}} anonymized for pri
 1. Copy the prompt above (everything between the --- lines)
 2. Paste into ChatGPT or Gemini
 3. The LLM will return YAML in a code block - click the copy button on the code block
-4. Save the copied YAML to categories.yaml
-5. Run the convert command with the updated config
+4. VERIFY the YAML format - check that keywords are NOT in nested arrays
+5. Save the copied YAML to categories.yaml
+6. Run the convert command with the updated config
 `
 
 // UpdateConfigCmd executes the update-config command

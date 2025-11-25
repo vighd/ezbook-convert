@@ -1,0 +1,193 @@
+known_partners:
+  - ALDI 241.SZ.
+  - AUCHAN SZEGED
+  - foodora
+  - MOL 63150 sz. toltoall
+  - SZKT FEDE LZETI JEGY
+  - [TRANSFER_PARTNER]
+  - EasyPark
+  - EURONICS MU SZAKI A RU
+  - Vertoi ABC
+  - JUVENTAS-MEDOSWISS PAT
+  - SZEGED BENZINKU T AUT.
+  - sweet.tv 1 49975658
+  - DM 304.SZ.
+  - SIMPLEP baloghekszer
+  - ORA GY. PREMIUM K
+  - SZIVARVANYOS KFT
+  - KIDDIE PLAYER KFT
+  - VIDAMPARK ORIASKEREK
+  - 212 SZ. COOP ABC
+  - ROSSMANN 272.
+  - 1078 SZEGED PLA ZA
+  - Google YouTube
+  - DECATHLON SZEGED
+  - NYX OILSHOPKft
+  - GITHUB INC.
+  - GOOGLE YouTube Member
+  - ADRE-VINO KFT.
+  - BARIONP BARION.COM/GUE
+  - DM 452
+  - GLS_6718 AUTOMATA
+  - ELECTROLUX LEHEL HUTOG
+  - JAKAB ZO LDSE G
+  - Amar19 Pekseg Kft
+  - CBA PRI MA NOVA
+  - BARIONP YETTELSZMLA
+  - FRESS Market - Csemege
+  - SZOREGI U. 80. CBA
+  - SIMPLEP GLS Applik ci
+  - ALDI 122.SZ.
+  - GOOGLE Google One
+  - Maxi Market
+  - SIMPLEP flowpont.hu
+  - Z&F
+  - BRENDON BABAARUHAZ
+  - BURGER KING SZEGED DRI
+  - PEPCO 3600 SZEGED ARK
+  - FO KUSZ KO NYVA RUHA Z
+  - sweet.tv 1 49287323
+  - PATIKAPLUS GYO GYSZERT
+  - ALDI 84.SZ.
+  - IMO 19
+  - Sweet TV Group Hu Kft.
+  - 5. SZ. ID. CSONGRA D
+  - BOHE M KA VE HA Z
+  - Kovacs Autoalkatresz K
+  - SZEGED KAB (KERESKEDO
+  - Wok n Go
+  - aliexpress
+  - GOPAY INVITALPET.HU
+  - PRAKTIKER 325.
+  - REGIO JA TE K ST.
+  - Google One
+  - SINSAY SZEGED PLAZA
+
+categories:
+  Communication:
+    subcategory: Telephone Bill
+    keywords:
+      - yettel
+      - telekom
+      - vodafone
+      - telenor
+  Entertainment:
+    subcategory: Subscriptions
+    keywords:
+      - youtube
+      - sweet.tv
+      - netflix
+      - spotify
+      - vidampark
+      - cinema
+      - mozi
+      - Google One
+      - Google YouTube
+  Finance & Insurance:
+    subcategory: Service Charge
+    keywords:
+      - hitel törlesztés
+      - biztosítási díj
+      - csomagdíj
+      - tranzakciós költség
+      - kamat
+      - Barion
+  Food & Drink:
+    subcategory: Food
+    keywords:
+      - aldi
+      - auchan
+      - lidl
+      - cba
+      - coop
+      - spar
+      - tesco
+      - penny
+      - dm
+      - rossmann
+      - foodora
+      - wolt
+      - burger king
+      - mcdonald
+      - kfc
+      - pizza
+      - [“Fress Market”, “Vertoi ABC”, “Maxi Market”, “Szivárványos Kft”, “5. SZ. ID. CSONGRA D”, “BOHE M KA VE HA Z”]
+    exact_matches:
+      - ALDI 241.SZ.
+      - ALDI 122.SZ.
+      - ALDI 84.SZ.
+      - AUCHAN SZEGED
+      - Vertoi ABC
+      - 212 SZ. COOP ABC
+      - FRESS Market - Csemege
+      - Maxi Market
+  Clothing & Appearance:
+    subcategory: Clothing
+    keywords:
+      - sinsay
+      - ruha
+      - öltöny
+      - cipő
+      - FO KUSZ KO NYVA RUHA Z
+      - Z&F
+  Housing & Houseware:
+    subcategory: Electronics
+    keywords:
+      - praktiker
+      - electrolux
+      - euronics
+      - ikea
+      - obi
+      - bauhaus
+      - NYX OILSHOPKft
+      - DECATHLON SZEGED
+    exact_matches:
+      - EURONICS MU SZAKI A RU
+      - ELECTROLUX LEHEL HUTOG
+      - PRAKTIKER 325.
+  Medical & Healthcare:
+    subcategory: Medical Expense
+    keywords:
+      - patika
+      - gyógyszert
+      - orvos
+      - kórház
+      - PATIKAPLUS GYO GYSZERT
+  Transportation:
+    subcategory: Public Transit
+    keywords:
+      - easypark
+      - szkt
+      - benzinkút
+      - benzinku
+      - mol
+      - shell
+      - omv
+      - volánbusz
+      - bkk
+      - szeged benzin­ku
+      - GLS
+    exact_matches:
+      - SZKT FEDE LZETI JEGY
+  Education & Studying:
+    subcategory: Tuition & Courses
+    keywords:
+      - github
+      - github inc
+      - kiddie player
+      - Kiddie Player KFT
+  Gift & Social:
+    subcategory: Gift & Social Expense
+    keywords:
+      - brendon
+      - bababolt
+      - szivarvanyos
+      - Wok n Go
+  Miscellaneous:
+    subcategory: Other
+    keywords:
+      - imo
+      - aliexpress
+      - [TRANSFER_PARTNER]
+      - barionp
+      - flowpont

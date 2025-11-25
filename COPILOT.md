@@ -175,6 +175,12 @@ TASK:
    - New merchants added to known_partners list
    - New keywords added to appropriate categories
    - Each category MUST have a 'subcategory' field with appropriate subcategory name
+   - Keywords MUST be on separate lines, NOT in arrays like ["item1", "item2"]
+
+IMPORTANT FORMATTING:
+- Each keyword on a separate line with dash (-)
+- NO nested lists or arrays
+- Look for business type hints in merchant names (e.g., "Pekseg" = bakery)
    
 AVAILABLE CATEGORY NAMES (from ezBookkeeping defaults):
 - Food & Drink

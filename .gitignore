@@ -1,0 +1,20 @@
+# Binaries
+ezbook-convert
+ezbook-convert.exe
+
+# Go
+*.out
+go.sum
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test files
+*.csv
+!examples/*.csv
+
+# Config (user-specific)
+categories.yaml
